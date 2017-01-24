@@ -1,0 +1,12 @@
+code = raw_input("Enter Code \n")
+
+val = 0
+text = ''
+for i in code :
+    temp = ord(i)
+    temp = temp - val
+    temptx = chr(temp)
+    text = text + temptx
+    val = val + 1
+
+print(text)
